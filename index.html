@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Camil Pizzería | Horno de Leña y Tradición</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Handlee&display=swap');
+        
+        body {
+            background-color: #F8F8F8; 
+            color: #333333; 
+            font-family: 'Handlee', cursive;
+        }
+
+        .navbar-custom {
+            background-color: #A0522D; 
+            border-bottom: 6px solid #FFD700; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+        }
+        .navbar-brand .logo-text {
+            font-family: 'Pacifico', cursive; 
+            font-size: 2.2rem;
+            color: #FFFFFF !important; 
+            letter-spacing: 1.5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .navbar-brand img {
+            border: 3px solid #FFD700; 
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1200x600/5A3F2C/F0F0F0?text=Fondo+Horno+de+Leña') no-repeat center center;
+            background-size: cover;
+            min-height: 55vh; 
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 6rem 0; 
+            margin-bottom: 4rem;
+        }
+        .hero-title {
+            font-family: 'Pacifico', cursive; 
+            font-size: 5.5rem; 
+            color: #FFD700; 
+            text-shadow: 3px 3px 6px rgba(160, 82, 45, 0.9); 
+            line-height: 1.1;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+            color: #FFFAFA;
+            font-weight: 300;
+        }
+
+        #menu h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 4rem;
+            color: #A0522D; 
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px dashed #D2B48C; 
+        }
+
+        .card {
+            border: 2px solid #D2B48C; 
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            background-color: #FFFFFF !important; 
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+        .card:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 12px 25px rgba(255, 215, 0, 0.4);
+        }
+        .card-img-top {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 200px; 
+            object-fit: cover; 
+            border-bottom: 3px solid #FFD700; 
+        }
+        .card-body {
+            padding: 1.5rem;
+        }
+        .card-title {
+            font-family: 'Pacifico', cursive; 
+            color: #A0522D !important; 
+            font-size: 2.2rem;
+            margin-bottom: 0.8rem;
+            line-height: 1.2;
+        }
+        .card-text {
+            color: #555555; 
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+        .badge-price {
+            background-color: #FFD700 !important; 
+            color: #A0522D !important; 
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 0.6em 1em;
+            border-radius: 25px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        .btn-order {
+            background-color: #D2691E; 
+            border-color: #D2691E;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn-order:hover {
+            background-color: #A0522D; 
+            border-color: #A0522D;
+            transform: scale(1.02);
+        }
+
+        
+        footer {
+            background-color: #333333; 
+            border-top: 5px solid #FFD700; 
+            color: #CCCCCC;
+            font-size: 0.9rem;
+            padding: 2.5rem 0;
+        }
+        footer .text-warning {
+            color: #FFD700 !important; 
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="pizza 1.avif" alt="Logo de Camil Pizzería" width="60" height="60" class="d-inline-block me-3 rounded-circle border border-light">
+                <span class="logo-text">Camil Pizzería</span>
+            </a>
+            <button class="btn btn-warning text-dark btn-sm d-none d-md-block" type="button" style="font-weight: bold;">¡Pide Ahora! (829) 555-PIZA</button>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="container">
+            <h1 class="hero-title text-uppercase">Horneamos Sueños, Servimos Sabor</h1>
+            <p class="lead fw-normal">Cada pizza, una obra maestra de pasión y tradición.</p>
+            <a href="#menu" class="btn btn-order btn-lg mt-4 shadow-lg">VER NUESTRO MENÚ COMPLETO</a>
+        </div>
+    </div>
+
+    <div class="container py-5" id="menu">
+        <h2 class="text-center mb-5">Nuestras Pizzas Artesanales 🍕</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+            
+            <div class="col">
+                <div class="card h-100 text-dark shadow">
+                    <img src="pizza 1.avif" class="card-img-top" alt="Pizza Margarita">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Margarita Clásica</h5>
+                        <p class="card-text small mb-4">La esencia de Italia: tomate San Marzano, mozzarella fresca y albahaca aromática.</p>
+                        <span class="badge badge-price mb-3 fs-6 align-self-start">$10.50</span>
+                        <a href="#" class="mt-auto btn btn-order">¡ORDENAR AHORA!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 text-dark shadow">
+                    <img src="pizza 2.avif" class="card-img-top" alt="Pizza Pepperoni">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pepperoni Supremo</h5>
+                        <p class="card-text small mb-4">El favorito indiscutible: generosas rebanadas de pepperoni sobre una cama de queso derretido.</p>
+                        <span class="badge badge-price mb-3 fs-6 align-self-start">$14.00</span>
+                        <a href="#" class="mt-auto btn btn-order">¡ORDENAR AHORA!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 text-dark shadow">
+                    <img src="pzza 3.avif" class="card-img-top" alt="Pizza Vegetariana">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Huerto Fresco</h5>
+                        <p class="card-text small mb-4">Una explosión de vegetales: pimientos, cebolla morada, champiñones, aceitunas y espinacas.</p>
+                        <span class="badge badge-price mb-3 fs-6 align-self-start">$12.75</span>
+                        <a href="#" class="mt-auto btn btn-order">¡ORDENAR AHORA!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 text-dark shadow">
+                    <img src="pizza 4.avif" class="card-img-top" alt="Pizza de Carnes Mixtas">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">La Carnívora</h5>
+                        <p class="card-text small mb-4">Para los amantes de la carne: pepperoni, salchicha italiana, jamón y bacon crujiente.</p>
+                        <span class="badge badge-price mb-3 fs-6 align-self-start">$17.50</span>
+                        <a href="#" class="mt-auto btn btn-order">¡ORDENAR AHORA!</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="py-4 mt-5 text-center">
+        <div class="container">
+            <p class="mb-0 small">Camil Pizzería | <span class="text-warning fw-bold">¡Hecho con pasión, servido con amor!</span></p>
+            <p class="mb-0 small mt-1">Av. Principal #123, Ciudad | Tel: (829) 555-PIZA</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
